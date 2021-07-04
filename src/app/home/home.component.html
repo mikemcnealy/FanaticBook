@@ -1,0 +1,12 @@
+<div class="container">
+ <div *ngFor="let  book of books;index as i">
+      <div *ngIf="i<=5">
+   <app-book-design
+        [Author]=book.Author
+        [Title]=book.Title
+        [Price]=book.Price
+        [Book_ID] =book.book_id
+        [imageURL] =book.imageURL>
+   </app-book-design>
+ </div>
+</div>

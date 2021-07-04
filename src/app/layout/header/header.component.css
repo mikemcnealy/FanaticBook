@@ -1,0 +1,102 @@
+.container{
+  background-color: #064880;
+  display: flex;
+  /* height: px; */
+  width: 100%;
+  /* position: relative; */
+  height: 60px;
+}
+.ShoppingCart{
+  position: absolute;
+  height: 30px;
+  margin-left: 96%;
+  background-color: #064880;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.nav label{
+  color: #ffff;
+  padding: 16px;
+  padding-top: 8px;
+  height: 70px;
+  background-color: #064880;
+}
+.SearchBooks{
+  width: 60%;
+  height: 40px;
+  margin-top: 20px;
+}
+.container img{
+height:  40px;
+margin-top: 8px;
+margin-right: 20px;
+padding-left: 10px;
+background-color: #064880;
+}
+.container div:nth-child(2) {
+width: 1px;
+padding: 1px;
+background-color:#68a900;
+margin: 8px;
+}
+.container div:nth-child(3){
+  width: 100px;
+  color: beige;
+  height: 10px;
+}
+label{
+  color: #fff;cursor: pointer;
+  margin: 18px 10px;
+  background-color: #064880;
+}
+
+/* .container div:nth-child(3){
+ background-color: sienna;
+} */
+.container span{
+  background-color:#076bc2;
+  padding: 9px;
+  cursor: pointer;
+}
+input[type=text] {
+  width: 248px;
+  height: 20px;
+  /* padding: 12px 20px; */
+  margin: 12px 0;
+    height: 30px;
+
+  /* box-sizing: border-box; */
+}
+label:hover{
+  text-decoration: underline;
+  /* background-color: #076bc2; */
+  /* padding: 3px; */
+}
+.CartCounter{
+  background-color: #68a900;
+  position: relative;
+  margin-top: -80px;
+  /* margin-left: 1320px; */
+  border-radius: 15px;
+  font-size: xx-small;
+  text-align: center;
+  height: 10px;
+  width: 18px;
+  color: #fff;
+}
+.counter{
+  background-color: #68a900;
+  position: relative;
+  border-radius: 15px;
+  font-size: small;
+  text-align: center;
+  height: 14px;
+  width: 20px;
+  color: #000;
+  font-weight: bold;
+  margin-left:1868px;
+  margin-top: -50px;
+  cursor: pointer;
+
+}
+

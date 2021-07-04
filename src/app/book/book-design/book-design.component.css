@@ -1,0 +1,14 @@
+.container{
+  display: flex;
+  margin: 10px 22px;
+}
+
+.container img{
+  cursor: pointer;
+}
+/* .container div:nth-child(2) {
+  margin: 0px 30px;
+} */
+.bookDetail{
+  margin: 0px 30px;
+}

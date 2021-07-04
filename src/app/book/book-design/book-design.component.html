@@ -1,0 +1,9 @@
+<div class="container">
+  <img [src]=imageURL (click)="updateCartCount(Book_ID)">
+</div>
+<div class="bookDetail">
+  <div><b>Title:</b>{{Title}}</div>
+  <div><b>Author:</b>{{Author}}</div>
+  <div><b>Price:</b>{{Price|number:'1.2-3'|currency}}</div>
+</div>
+
