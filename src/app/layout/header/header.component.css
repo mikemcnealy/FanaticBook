@@ -41,7 +41,7 @@ margin: 8px;
 }
 .container div:nth-child(3){
   width: 100px;
-  color: beige;
+  /* color: rgb(110, 110, 92); */
   height: 10px;
 }
 label{
@@ -68,23 +68,32 @@ input[type=text] {
   /* box-sizing: border-box; */
 }
 label:hover{
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  /* border-bottom-color: #68a900; */
   /* background-color: #076bc2; */
   /* padding: 3px; */
+  border-bottom: #68a900 2px solid;
 }
 .CartCounter{
   background-color: #68a900;
-  position: relative;
-  margin-top: -80px;
+  position: absolute;
+   margin-top: -57px;
   /* margin-left: 1320px; */
+  margin-left: 97.2%;
   border-radius: 15px;
   font-size: xx-small;
   text-align: center;
-  height: 10px;
-  width: 18px;
-  color: #fff;
+  height: 20px;
+  width: 22px;
+  color: #000;
+  cursor: pointer;
+
 }
-.counter{
+.CartCounter span{
+  background-color:#68a900;
+  font-weight: bold;
+}
+/* .counter{
   background-color: #68a900;
   position: relative;
   border-radius: 15px;
@@ -98,5 +107,5 @@ label:hover{
   margin-top: -50px;
   cursor: pointer;
 
-}
+} */
 

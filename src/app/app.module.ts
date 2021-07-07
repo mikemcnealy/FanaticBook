@@ -7,7 +7,14 @@ import {HeaderComponent} from '../app/layout/header/header.component';
 import{FooterComponent} from '../app/layout/footer/footer.component'
 import {HomeComponent} from '../app/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
-import {MatDialogModule} from '@angular/material/dialog'
+import {MatDialogModule} from '@angular/material/dialog';
+import { StoreModule } from '@ngrx/store';
+import { reducers, metaReducers } from './store/reducers';
+import { EffectsModule } from '@ngrx/effects';
+import { EntityDataModule } from '@ngrx/data';
+import { entityConfig } from './entity-metadata';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { environment } from '../environments/environment'
 
 @NgModule({
   declarations: [
@@ -21,7 +28,13 @@ import {MatDialogModule} from '@angular/material/dialog'
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    StoreModule.forRoot(reducers, {
+      metaReducers
+    }),
+    EffectsModule.forRoot([]),
+   // EntityDataModule.forRoot(entityConfig),
+    StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent]

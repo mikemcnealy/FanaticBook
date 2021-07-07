@@ -1,0 +1,21 @@
+
+{
+  "books ":[{
+    "book_id":1,
+    "Title":"",
+    "Description":"",
+    "author":"",
+    "rating":0,
+    "price":0,
+    "imageURL":""
+  }],
+  "Users":[{
+    "user_id":1,
+    "user":"",
+    "password":""
+  }],
+  "shoppingCart":[{
+    "user_id":0,
+    "boook_id":0
+  }]
+}

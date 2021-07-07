@@ -15,6 +15,10 @@ export class AppComponent implements OnInit{
  // books:Book=[]
   book:Book;
   image:string;
+  bookTitle:string;
+  Author:string;
+  Price:number;
+
   close_window:Boolean=false
  constructor(private bookService:BookService,private UpdateShopping:UpdateShoppingCartService,private dialog:MatDialog){
 
@@ -29,6 +33,7 @@ export class AppComponent implements OnInit{
      this.book = <Book>this.UpdateShopping.getSelectBook();
      console.log(this.book)
      this.image =this.book.imageURL
+     this.bookTitle =this.book.Title
     //this.image = '../../assets/images/book4.png'
     this.UpdateShopping.castBook
 
