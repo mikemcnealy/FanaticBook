@@ -37,4 +37,7 @@ export class BookService {
   //console.log(this.book)
     return this.book;
   }
+  AddBok(book:Book){
+    this.bookList.push(book.book_id,book.Title,book.Description,book.Price,book.imageURL,book.Author,book.rating)
+  }
 }
