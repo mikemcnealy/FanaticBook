@@ -1,5 +1,6 @@
 import { BookService } from './../../services/book.service';
-import {UpdateShoppingCartService} from '../../services/update-shopping-cart.service'
+import {UpdateShoppingCartService} from '../../services/update-shopping-cart.service';
+import{Generate} from '../../class/ID_Generate'
 import { Component, OnInit ,Input } from '@angular/core';
 import{Book} from '../../interface/book';
 //import { Console } from 'console';
@@ -20,7 +21,9 @@ export class BookDesignComponent implements OnInit {
     @Input('imageURL') public imageURL:string;
     updateCartCount(id:number){
      //this._book = this.book.getBookByID(id);
-     this.updateCart.addSelectBook(this.book.getBookByID(id))
+
+      //alert(bookID)
+     this.updateCart.addSelectBook(this.book.getBookByID(Generate.ID(8)))
      //this.updateCart.castBook
      this._book1 = this.updateCart.getSelectBook()
 
