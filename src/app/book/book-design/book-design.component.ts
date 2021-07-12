@@ -20,13 +20,19 @@ export class BookDesignComponent implements OnInit {
     @Input('imageURL') public imageURL:string;
     updateCartCount(id:number){
      //this._book = this.book.getBookByID(id);
-     this.updateCart.addSelectBook(this.book.getBookByID(id))
+     this.updateCart.addSelectBook(this.book.getBookByID(id),1)
      //this.updateCart.castBook
      this._book1 = this.updateCart.getSelectBook()
 
      this.updateCart.showSelectBook(true)
 
      console.log(this._book1)
+    }
+
+    addToCart(id:number){
+      this.updateCart.addSelectBook(this.book.getBookByID(id),1)
+      //this.book.getBookByID(id);
+      //this.updateCart.addSelectBook()
     }
   ngOnInit(): void {
   }

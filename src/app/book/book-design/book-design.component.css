@@ -9,6 +9,27 @@
 /* .container div:nth-child(2) {
   margin: 0px 30px;
 } */
+
 .bookDetail{
   margin: 0px 30px;
+}
+.borde{
+  border: #CACFD2 solid 1px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-left: 10Px;
+  padding: 6px;
+}
+.borde button{
+  border: #064880;
+  border-radius: 5px;
+  background-color: #064880;
+  color: #ffff;
+  padding: 6px;
+  text-align: center;
+  margin-top: 4px;
+  margin-left: 20px;
+  height: 35px;
+  width: 80%;
+  cursor: pointer;
 }

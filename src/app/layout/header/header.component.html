@@ -4,13 +4,13 @@
   <!-- <app-navbar></app-navbar> -->
 <div>&nbsp;</div>
 
-  <label>Home</label>
-  <label (click)='contact()'>Contact</label>
+  <label routerLink='home'>Home</label>
+  <label routerLink=''>Contact</label>
   <!-- <label>Contact Account</label> -->
-  <label>Register</label>
+  <label routerLink='Register'>Register</label>
   <label *ngIf=!login >my profile </label>
 <label *ngIf=login>Login</label>
-<img *ngIf=cart_count class="ShoppingCart" src="../../assets/images/Shopping Cart.png" alt="" srcset="">
+<img *ngIf=cart_count routerLink='ShoppingCart'class="ShoppingCart" src="../../assets/images/Shopping Cart.png" alt="" srcset="">
 </div>
 
 <!-- <label>Sign In</label> -->

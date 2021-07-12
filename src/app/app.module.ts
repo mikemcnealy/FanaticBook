@@ -1,13 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {BookDesignComponent} from '../app/book/book-design/book-design.component';
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule , routingComponents} from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import {HeaderComponent} from '../app/layout/header/header.component';
 import{FooterComponent} from '../app/layout/footer/footer.component'
 import {HomeComponent} from '../app/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatTableModule} from '@angular/material/table';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './store/reducers';
 import { EffectsModule } from '@ngrx/effects';
@@ -20,7 +22,7 @@ import { environment } from '../environments/environment'
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent,
+  HomeComponent,
     FooterComponent,
     BookDesignComponent
   ],
@@ -29,6 +31,8 @@ import { environment } from '../environments/environment'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    MatTableModule,
+    HttpClientModule,
     StoreModule.forRoot(reducers, {
       metaReducers
     }),

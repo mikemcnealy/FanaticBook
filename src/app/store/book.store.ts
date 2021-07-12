@@ -12,4 +12,4 @@ export const reducer = createReducer<Book>(initialState,on(addBooks,(state)=>({.
 
 // selectors
 export const Book_FEATURE_NAME ='book'
-const bookFeatureSelector = createFeatureSelector(<any >(Book_FEATURE_NAME))
+const bookFeatureSelector = createFeatureSelector(<any>(Book_FEATURE_NAME))
