@@ -5,6 +5,7 @@ import {HomeComponent} from '../app/home/home.component';
 import {LoginComponent} from '../app/Auth/login/login.component';
 import {RegisterComponent} from '../app/Auth/register/register.component';
 import{ShoppingCartComponent} from '../app/shopping-cart/shopping-cart.component'
+import { UserProfileComponent } from './user-profile/user-profile.component'
 
 
 
@@ -14,9 +15,10 @@ const routes: Routes = [
   {path:'home',component:HomeComponent},
   {path:'Login',component:LoginComponent},
   {path:'Register',component:RegisterComponent},
-  {path:'**',component:PageNotFoundComponent},
   {path:'ShoppingCart',component:ShoppingCartComponent},
-  {path:'',redirectTo:'/home' ,pathMatch:'full'}
+  {path:'profile',component:UserProfileComponent},
+  {path:'',redirectTo:'/home' ,pathMatch:'full'},
+  {path:'**',component:PageNotFoundComponent},
 ];
 
 @NgModule({
@@ -24,4 +26,9 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents =[HomeComponent,PageNotFoundComponent,RegisterComponent,ShoppingCartComponent]
+export const routingComponents =[
+  HomeComponent,
+  PageNotFoundComponent,
+  RegisterComponent,
+  ShoppingCartComponent,
+  UserProfileComponent]

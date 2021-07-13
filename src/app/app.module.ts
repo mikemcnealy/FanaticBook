@@ -16,7 +16,8 @@ import { EffectsModule } from '@ngrx/effects';
 import { EntityDataModule } from '@ngrx/data';
 import { entityConfig } from './entity-metadata';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
-import { environment } from '../environments/environment'
+import { environment } from '../environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { environment } from '../environments/environment'
   HomeComponent,
     FooterComponent,
     BookDesignComponent
+   // UserProfileComponent
   ],
   imports: [
     BrowserModule,

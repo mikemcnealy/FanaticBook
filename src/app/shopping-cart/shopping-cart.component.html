@@ -1,38 +1,73 @@
-<p>shopping-cart works!</p>
+<br>
 <div class="container">
+  <br>
 <ng-container >
-  <div class="card-tsble">
-    <div class="car-product">
-      <table class="table table-responsive">
-        <thead>
-          <tr>
-            <th>Sr.No</th>
-            <th>Book Title</th>
-            <th>Book Image</th>
-            <th>Author</th>
-            <th>Price</th>
-            <th>Quantity</th>
-            <th>Total</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tbody>
-      </table>
-    </div>
-  </div>
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  </style>
+  </head>
+  <body>
+
+  <h2></h2>
+
+  <table>
+    <tr>
+     <thead>
+      <th><b>Book Image</b></th>
+      <th><b>Title</b></th>
+      <th><b>Author</b></th>
+      <th><b>Price</b></th>
+      <th><b>Quantity</b></th>
+      <th><b>Total</b></th>
+      <th><b>Action</b></th>
+     </thead>
+     <tbody>
+       <tr>
+        <td><img class="bookImage" src="../../assets//images//book3.png" alt=""></td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td><a  type="button" class="btn btn-Danger">Remove</a></td>
+       </tr>
+       <br>
+       <br>
+     </tbody>
+     <tfoot>
+      <a class="btn" type="button" class="btn btn-primary">Empty Cart</a>
+      <a class="btn" type="button" class="btn btn-success" routerLink='home'>Shop More</a>
+      <a  type="button" class="btn btn-Danger">Checkout</a>
+     </tfoot>
+    </tr>
+  </table>
+  </body>
+  <br>
+  <br>
+  <br>
+  </html>
+
 </ng-container>
 </div>
 <div class="container">
-  <button>Empty Cart</button>
-  <button>Shop More</button>
-  <button>Checkout</button>
+  <div class="container">
+
+  </div>
 </div>

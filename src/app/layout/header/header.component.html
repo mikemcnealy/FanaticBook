@@ -3,13 +3,13 @@
   <img src="../../assets/images/logo.png" alt="">
   <!-- <app-navbar></app-navbar> -->
 <div>&nbsp;</div>
-
   <label routerLink='home'>Home</label>
-  <label routerLink=''>Contact</label>
+  <label>Contact</label>
   <!-- <label>Contact Account</label> -->
   <label routerLink='Register'>Register</label>
-  <label *ngIf=!login >my profile </label>
-<label *ngIf=login>Login</label>
+  <label routerLink='profile' *ngIf=!login >my profile </label>
+<label *ngIf=!login>Login</label>
+<label *ngIf=!login routerLink='Login'>Log out</label>
 <img *ngIf=cart_count routerLink='ShoppingCart'class="ShoppingCart" src="../../assets/images/Shopping Cart.png" alt="" srcset="">
 </div>
 

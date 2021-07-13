@@ -8,8 +8,8 @@ import{UpdateShoppingCartService} from '../../services/update-shopping-cart.serv
 })
 export class HeaderComponent implements OnInit {
   cart_count:number=6
-  0
-  login:boolean =true
+
+  login:boolean =false
   constructor(private UpdateShoppingCar:UpdateShoppingCartService) { }
 
   contact(){}
