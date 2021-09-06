@@ -3,9 +3,29 @@
 position: relative;
   color: #fff;
   padding-top: 2px;
-    background-color: #000;
+    background-color: #17202A;
 }
 
 p{
-  background-color: #000;
+  background-color: #17202A;
 }
+
+
+.contact img:nth-child(1){
+margin-left: 40%;
+}
+.contact img{
+  background-color: #17202A;
+  padding: 10px 8px;
+  width: 30px;
+
+}
+
+.contact span{
+  margin-left: 80px;
+  background-color: #17202A;
+  color: #fff;
+}
+/* body{
+  color: #fff;
+} */

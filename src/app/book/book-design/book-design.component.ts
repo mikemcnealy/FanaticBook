@@ -1,7 +1,9 @@
+import { API } from './../../services/API.service';
 import { BookService } from './../../services/book.service';
 import {UpdateShoppingCartService} from '../../services/update-shopping-cart.service'
 import { Component, OnInit ,Input } from '@angular/core';
 import{Book} from '../../interface/book';
+//import {API} from'../../services/API.service'
 //import { Console } from 'console';
 
 @Component({
@@ -12,7 +14,7 @@ import{Book} from '../../interface/book';
 export class BookDesignComponent implements OnInit {
    _book:Book
    _book1:Book
-  constructor(private book:BookService,private updateCart:UpdateShoppingCartService) { }
+  constructor(private book:BookService,private updateCart:UpdateShoppingCartService,private api:API) { }
     @Input('Book_ID') public Book_ID:number;
     @Input('Author') public Author:string;
     @Input('Title') public Title:string;
@@ -33,6 +35,7 @@ export class BookDesignComponent implements OnInit {
       this.updateCart.addSelectBook(this.book.getBookByID(id),1)
       //this.book.getBookByID(id);
       //this.updateCart.addSelectBook()
+     // this.api.Post()
     }
   ngOnInit(): void {
   }

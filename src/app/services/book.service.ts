@@ -1,24 +1,56 @@
-
 import { Injectable } from '@angular/core';
 import {UpdateShoppingCartService} from '../services/update-shopping-cart.service'
-import{Book} from '../interface/book'
+import{Book} from '../interface/book';
+import {storeAction} from '../class/storeAction'
+import {API} from '../../app/services/API.service'
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
+constructor(private api:API){
+ let store = new storeAction();
+ let newBook:Book;
 
-
+}
+  booklist:any;
   bookList=[];
   book:Book
+
   getBookList(): Book[]{
-    this.bookList.push({book_id:1,Title:'PET Sematary',Description:'',Price:50,imageURL:'../../assets/images/book1.png',Author:'Stephen King',rating:4});
-    this.bookList.push({book_id:2,Title:'Just One Bite',Description:'',Price:10,imageURL:'../../assets/images/book2.png',Author:'Jack Heath',rating:4});
-    this.bookList.push({book_id:3,Title:'Gilly Macmillan',Description:'',Price:11,imageURL:'../../assets/images/book3.png',Author:'Jack Heath',rating:4});
-    this.bookList.push({book_id:4,Title:'Just One Bite',Description:'',Price:30,imageURL:'../../assets/images/book4.png',Author:'Jack Heath',rating:4});
-    this.bookList.push({book_id:5,Title:'Dark Tower-The Gunslinger',Description:'',Price:19,imageURL:'../../assets/images/book5.png',Author:'Stephen King',rating:3});
-    this.bookList.push({book_id:6,Title:'Before the Devil Fell',Description:'',Price:10,imageURL:'../../assets/images/book7.png',Author:'Neil Olson',rating:5});
+
+   // this.api.Get('books',1);
+   // console.log(this.api.Get('books'));
+ //const store = new storeAction();
+
+    this.booklist =this.api.Get('books').subscribe(data=>{
+      console.log('length');
+      console.log(data.length);
+      if(data.length > 1){
+        for(let i=0;i<= data.length;i++){
+          this.bookList.push({
+            book_id:data[i].id,
+            Title:data[i].Title,
+            Description:data[i].Description,
+            Price:data[i].price,
+            imageURL:data[i].imageURL,
+            Author:data[i].author,
+            rating:data[i].rating
+         })
+         }
+      }else{
+        this.bookList.push({
+          book_id:data.id,
+          Title:data.Title,
+          Description:data.Description,
+          Price:data.price,
+          imageURL:data.imageURL,
+          Author:data.author,
+          rating:data.rating
+       })
+      }
+    })
 
     return   this.bookList
   }
@@ -40,4 +72,10 @@ export class BookService {
   AddBok(book:Book){
     this.bookList.push(book.book_id,book.Title,book.Description,book.Price,book.imageURL,book.Author,book.rating)
   }
+  Login(user:string,PWD:string){
+    if(user !=null && PWD !=null){
+
+    }
+  }
+  CreateLogin(){}
 }

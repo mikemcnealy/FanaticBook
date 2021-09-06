@@ -39,9 +39,9 @@
       <th><b>Action</b></th>
      </thead>
      <tbody>
-       <tr>
+       <tr *ngFor="let book of booksList">
         <td><img class="bookImage" src="../../assets//images//book3.png" alt=""></td>
-        <td>2</td>
+        <td>{{book.Title}}</td>
         <td>3</td>
         <td>4</td>
         <td>5</td>

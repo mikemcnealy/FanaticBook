@@ -4,12 +4,12 @@
   <!-- <app-navbar></app-navbar> -->
 <div>&nbsp;</div>
   <label routerLink='home'>Home</label>
-  <label>Contact</label>
-  <!-- <label>Contact Account</label> -->
-  <label routerLink='Register'>Register</label>
-  <label routerLink='profile' *ngIf=!login >my profile </label>
-<label *ngIf=!login>Login</label>
-<label *ngIf=!login routerLink='Login'>Log out</label>
+  <label (click)="contact()">Contact </label>
+  <label *ngIf=login>Admin</label>
+  <label routerLink='Register'*ngIf=!login>Register</label>
+  <label routerLink='profile' *ngIf=login >my profile </label>
+<label *ngIf=!login (click)='longIn_Out()'>Login</label>
+<label *ngIf=login (click)='longIn_Out()'>Log out</label>
 <img *ngIf=cart_count routerLink='ShoppingCart'class="ShoppingCart" src="../../assets/images/Shopping Cart.png" alt="" srcset="">
 </div>
 

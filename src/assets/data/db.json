@@ -1,21 +1,100 @@
 
 {
-  "books ":[{
-    "book_id":1,
-    "Title":"",
-    "Description":"",
-    "author":"",
+  "books":[{
+    "id":1,
+    "Title":"PET Sematary",
+    "Description":"Book",
+    "author":"Stephen King",
+    "rating":2.5,
+    "price":"50",
+    "imageURL":"../../assets/images/book1.png",
+    "sales tax":0.7
+  }
+  ,
+  {
+    "id":2,
+    "Title":"Just One Bite",
+    "Description":"Book",
+    "author":"Jack Heath",
+    "rating":0.5,
+    "price":"10",
+    "imageURL":"../../assets/images/book2.png",
+    "sales tax":0.7
+  },
+  {
+    "id":3,
+    "Title":"Gilly Macmillan",
+    "Description":"Book",
+    "author":"Jack Heath",
     "rating":0,
-    "price":0,
-    "imageURL":""
+    "price":"20",
+    "imageURL":"../../assets/images/book3.png",
+    "sales tax":0.7
+  },
+  {
+    "id":4,
+    "Title":"Just One Bite",
+    "Description":"Book",
+    "author":"Jack Heath",
+    "rating":0,
+    "price":"30",
+    "imageURL":"../../assets/images/book4.png",
+    "sales tax":0.7
+  },
+  {
+    "id":5,
+    "Title":"Dark Tower-The Gunslinger",
+    "Description":"Book",
+    "author":"Stephen King",
+    "rating":7.0,
+    "price":"19",
+    "imageURL":"../../assets/images/book5.png",
+    "sales tax":0.7
+  },
+  {
+    "id":6,
+    "Title":"Before the Devil Fell",
+    "Description":"Book",
+    "author":"Neil Olson",
+    "rating":0,
+    "price":18,
+    "imageURL":"../../assets/images/book7.png",
+    "sales tax":0.7
   }],
   "Users":[{
-    "user_id":1,
-    "user":"",
-    "password":""
+    "id":1,
+    "roll_id":1,
+    "user":"mike.mcnealy@outlook.com",
+    "first name":"Mike",
+    "last name":"McNealy",
+    "email":"mike.mcnealy@outlook.com",
+    "password":"supermane1958",
+    "phoneNumer":"(904)318-3903",
+    "phoneType":1,
+    "account locked":false,
+    "Last login":"9/4/2021"
   }],
   "shoppingCart":[{
-    "user_id":0,
-    "boook_id":0
+    "id":0,
+    "boook_id":0,
+    "quantity":0,
+    "sales tax":7.0,
+    "totalPrice":0
+  }],
+  "Rolls":[{
+    "id":1,
+    "Type":"admin"
+  },
+  {
+    "id":2,
+    "Type":"Manager"
+  },
+  {
+    "id":3,
+    "Type":"employee"
+  },
+  {
+    "id":4,
+    "Type":"customer"
   }]
 }

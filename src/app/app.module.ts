@@ -17,6 +17,14 @@ import { EntityDataModule } from '@ngrx/data';
 import { entityConfig } from './entity-metadata';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
+import { BackdropComponent } from './backdrop/backdrop.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AdminBoardComponent } from './boards/admin-board/admin-board.component';
+import { UsersBoardComponent } from './boards/users-board/users-board.component';
+import { BooksBoardComponent } from './boards/books-board/books-board.component';
+import { RollsBoardComponent } from './boards/rolls-board/rolls-board.component';
+import { CartBoardComponent } from './boards/cart-board/cart-board.component';
+
 
 
 @NgModule({
@@ -25,7 +33,14 @@ import { environment } from '../environments/environment';
     HeaderComponent,
   HomeComponent,
     FooterComponent,
-    BookDesignComponent
+    BookDesignComponent,
+    BackdropComponent,
+    DashboardComponent,
+    AdminBoardComponent,
+    UsersBoardComponent,
+    BooksBoardComponent,
+    RollsBoardComponent,
+    CartBoardComponent,
    // UserProfileComponent
   ],
   imports: [
